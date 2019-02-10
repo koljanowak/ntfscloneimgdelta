@@ -8,9 +8,9 @@ followed by nothing. My delta file uses exactly the same file format,
 adding a third case '2: the next cluster was identical in both images', 
 followed by nothing.
 
-  Usage:
-  ntfscloneimgdelta delta OLDFILE [NEWFILE [DELTA]]
-  ntfscloneimgdelta patch OLDFILE [DELTA [NEWFILE]]
+    Usage:
+    ntfscloneimgdelta delta OLDFILE [NEWFILE [DELTA]]
+    ntfscloneimgdelta patch OLDFILE [DELTA [NEWFILE]]
 
 OLDFILE and NEWFILE do not need to be in ascending chronological order,
 you can swap them to create reverse deltas. This enables you to always 
