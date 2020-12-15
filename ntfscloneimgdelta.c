@@ -361,7 +361,7 @@ static void apply_patch(char *file1, char* file2, char* file3)
   if(old.bbs_present == 1 && delta.bbs_present == 1)      /* the backup boot sector at the end, we  */
     ccount += 1;                                          /* just have one block more to compare    */
 
-  for(pos = 0; pos < old.ccount; pos++)
+  for(pos = 0; pos < ccount; pos++)
   {
     read_next_cluster(&old, 0);
     read_next_cluster(&delta, 1);
